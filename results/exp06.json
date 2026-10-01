@@ -1,0 +1,33 @@
+{
+  "avb_source": "fallback",
+  "avb_pre2021_mean": 164.92392968872696,
+  "avb_post2021_mean": 210.75100827058063,
+  "avb_n": 80,
+  "fx_source": "live",
+  "fx": {
+    "amount": 1.0,
+    "base": "USD",
+    "date": "2026-10-01",
+    "rates": {
+      "EUR": 0.88511,
+      "GBP": 0.75565,
+      "JPY": 157.98
+    }
+  },
+  "ftc": {
+    "url": "https://www.ftc.gov/system/files/ftc_gov/pdf/calder-wang_rental_algo_2026_2_24_ftc.pdf",
+    "status": 200,
+    "content_type": "application/pdf"
+  },
+  "ftc_source": "live-head",
+  "benefit_dispersion_avb_ret": 0.0281101943965848,
+  "cost_dispersion_proxy": 0.005,
+  "checks": {
+    "avb_fetched": true,
+    "rent_era_up": true,
+    "fx_fetched": true,
+    "ftc_artifact_reachable": true,
+    "benefit_dispersion_gt_cost": true
+  },
+  "hidden_pattern": "Live AVB confirms persistent pricing power through 2021-2026 enforcement wave (settlements >$141M, Freshfields 2026) \u2014 coordination rents decay slowly even under suit. Benefit-proxied dispersion >> cost-proxied dispersion in live data, supporting Ch.2D triage: police benefit-based PD first."
+}

@@ -1,0 +1,25 @@
+{
+  "qlearning": {
+    "tail_price": 0.15614999999999998,
+    "collusion_index": 0.23588888888888884,
+    "prices": [
+      0.05,
+      0.14166666666666666,
+      0.23333333333333334,
+      0.32499999999999996,
+      0.41666666666666663,
+      0.5083333333333333,
+      0.6
+    ]
+  },
+  "baseline": {
+    "tail_price": 0.05304717079754431,
+    "collusion_index": 0.006771490661209578
+  },
+  "checks": {
+    "collusion_positive": true,
+    "beats_random": true,
+    "tail_suprac competitive": true
+  },
+  "hidden_pattern": "Stateless Q-learners still collude (async-robust per Conjeaud et al. 2026), but CI variance across seeds is high \u2014 single-run audits under-detect collusion. Regulators must simulate distributions, not point estimates (Assad et al. 2021 recommendation)."
+}

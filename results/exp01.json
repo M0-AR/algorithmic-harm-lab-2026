@@ -1,0 +1,74 @@
+{
+  "S_no": {
+    "pm": 55.0,
+    "qm": 0.45,
+    "cs": 10.125,
+    "profit": 20.25,
+    "dwl": 10.125,
+    "pc": 10.0,
+    "qc": 0.9,
+    "cutoff": 55.0
+  },
+  "S_pd": {
+    "profit": 40.5,
+    "cs": 0.0,
+    "prob_buy": 0.9,
+    "total": 40.5,
+    "dwl": 0.0,
+    "cutoff": 10.0
+  },
+  "Uover_no": {
+    "pm": 70.0,
+    "qm": 0.6,
+    "cs": 0.0,
+    "profit": 36.0,
+    "dwl": 4.5,
+    "pc": 10.0,
+    "qc": 0.9,
+    "cutoff": 40.0
+  },
+  "Uover_pd": {
+    "profit": 70.0,
+    "cs": -30.0,
+    "prob_buy": 1.0,
+    "total": 40.0,
+    "dwl": 0.5,
+    "cutoff": -20.0
+  },
+  "Uunder_no": {
+    "pm": 45.0,
+    "qm": 0.35,
+    "cs": 13.125,
+    "profit": 12.25,
+    "dwl": 15.125,
+    "pc": 10.0,
+    "qc": 0.9,
+    "cutoff": 65.0
+  },
+  "Uunder_pd": {
+    "profit": 24.5,
+    "cs": 14.0,
+    "prob_buy": 0.7,
+    "total": 38.5,
+    "dwl": 2.0,
+    "cutoff": 30.0
+  },
+  "imperfect_S4": {
+    "cs": 9.375,
+    "profit": 30.0
+  },
+  "imperfect_U4": {
+    "cs": -17.5,
+    "profit": 57.5
+  },
+  "theorem_checks": {
+    "S_CS_erased": true,
+    "S_DWL_eliminated": true,
+    "S_profit_up": true,
+    "Uover_CS_negative": true,
+    "Uover_CS_worse_than_S": true,
+    "Uover_profit_highest": true,
+    "Uunder_efficiency_up": true,
+    "imperfect_S_leaves_CS": true
+  }
+}

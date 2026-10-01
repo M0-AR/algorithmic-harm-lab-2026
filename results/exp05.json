@@ -1,0 +1,41 @@
+{
+  "raw_price_gap_minority_minus_majority": 8.019639238467121,
+  "permutation": {
+    "income": 0.4179213843334161,
+    "education": 0.06298786093223185,
+    "zip": 0.048141265070089756,
+    "height": 0.04707217594254216,
+    "savings": 0.4981188080904547
+  },
+  "lasso": {
+    "income": 5.185339251794064,
+    "education": -0.5283422322958219,
+    "zip": 0.18638484792435042,
+    "height": -0.12632815772102762,
+    "savings": -6.1103900590586635
+  },
+  "teacher_student": {
+    "depth": 3,
+    "score": 0.6887903059226795,
+    "importances": {
+      "income": 0.3818771499172122,
+      "education": 0.0,
+      "zip": 0.0,
+      "height": 0.0,
+      "savings": 0.6181228500827878
+    }
+  },
+  "disparate_impact": {
+    "group_coef": 11.096930579144676,
+    "group_p": 3.4589670893057964e-138,
+    "rsq": 0.21130058706106414
+  },
+  "checks": {
+    "raw_gap_positive": true,
+    "group_coef_positive": true,
+    "group_significant": true,
+    "proxy_suspicious_zip_or_savings": true,
+    "student_faithful": true
+  },
+  "hidden_pattern": "Even with group EXCLUDED from blackbox inputs, zip+savings reconstruct it (proxy leakage). LASSO surrogate under-selects correlated proxies (one of zip/income drops) \u2014 single-protocol audits miss discrimination. Multi-protocol voting (perm+LASSO+tree) required, matching Blattner & Spiess 2022 inconsistency finding."
+}

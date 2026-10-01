@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+results/*.png
+results/*.csv
+!results/.gitkeep
+data/raw/*
+!data/README.md
+.env
+.venv/

@@ -1,0 +1,21 @@
+seed: 42
+V: 100.0          # max willingness to pay (uniform [0,V])
+cost: 0.0         # per-unit cost k (baseline); sweep in exp01
+delta_over: 30.0  # overestimation bias
+delta_under: -30.0
+gamma: 0.5        # seller share of perceived surplus (targeting ch.)
+b1: 200.0
+b2: 100.0
+delta_target_over: 3.0   # perceived b2 = 300 (delta factor)
+live:
+  yahoo_avb: "https://query1.finance.yahoo.com/v8/finance/chart/AVB?interval=1mo&range=5y"
+  frankfurter: "https://api.frankfurter.app/latest?from=USD&to=EUR,GBP,JPY"
+  uci_german_credit: "https://archive.ics.uci.edu/static/public/144/statlog+german+credit+data.zip"
+  online_retail_sample: true  # synthetic fallback if offline, live fetch attempted first
+experiments:
+  n_consumers: 20000
+  n_periods_bbp: 2
+  qlearning_episodes: 8000
+  qlearning_alpha: 0.15
+  qlearning_gamma: 0.95
+  qlearning_epsilon_decay: 0.9995

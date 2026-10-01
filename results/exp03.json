@@ -1,0 +1,50 @@
+{
+  "3.1a": {
+    "piA": 125.0,
+    "csA": 25.0,
+    "cs_pre": 100.0,
+    "ahat": 0.6666666666666666,
+    "pre_desc": "P1 to all",
+    "helps": false
+  },
+  "3.1b": {
+    "piA": 137.5,
+    "csA": -12.5,
+    "cs_pre": -37.5,
+    "ahat": 0.6666666666666666,
+    "pre_desc": "P2 to biased only",
+    "helps": true
+  },
+  "3.2a": {
+    "piA": 125.0,
+    "csA": 125.0,
+    "cs_pre": 100.0,
+    "ahatB": 0.33333333333333337,
+    "pre_desc": "P2 to all",
+    "helps": true
+  },
+  "3.2b": {
+    "piA": 137.5,
+    "csA": 137.5,
+    "cs_pre": 112.5,
+    "ahatB": 0.33333333333333337,
+    "pre_desc": "P1 to unbiased only",
+    "helps": true
+  },
+  "checks": {
+    "3.1a_profit125": true,
+    "3.1a_cs25": true,
+    "3.1a_harms": true,
+    "3.1b_profit137.5": true,
+    "3.1b_helps": true,
+    "3.2a_helps": true,
+    "3.2b_helps": true
+  },
+  "ahat_vs_delta": {
+    "1.5": 1.3333333333333333,
+    "2.0": 1.0,
+    "3.0": 0.6666666666666666,
+    "4.0": 0.5
+  },
+  "hidden_pattern": "ahat falls as misperception magnitude rises (verified: {1.5: 1.333, 2.0: 1.0, 3.0: 0.667, 4.0: 0.5}). Small-bias + small-share = largest harm zone \u2014 counterintuitive: mild biases fly under regulatory radar yet cause max targeting harm."
+}

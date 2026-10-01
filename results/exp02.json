@@ -1,0 +1,67 @@
+{
+  "baseline": {
+    "profit": 50.0,
+    "cs": 25.0,
+    "p": 50.0
+  },
+  "U": {
+    "p1": 57.142857142857146,
+    "pH2": 57.142857142857146,
+    "pL2": 28.571428571428573,
+    "profit": 57.14285714285714,
+    "cs": 22.448979591836736,
+    "groups": {
+      "v in [4V/7,V]": {
+        "cs_no": 24.489795918367346,
+        "cs_bbp": 18.367346938775512
+      },
+      "v in [V/2,4V/7]": {
+        "cs_no": 0.5102040816326531,
+        "cs_bbp": 1.7857142857142856
+      },
+      "v in [2V/7,V/2]": {
+        "cs_no": 0.0,
+        "cs_bbp": 2.295918367346939
+      },
+      "v in [0,2V/7]": {
+        "cs_no": 0.0,
+        "cs_bbp": 0.0
+      }
+    }
+  },
+  "S": {
+    "p1": 30.0,
+    "pH2": 60.0,
+    "pL2": 30.0,
+    "profit": 45.0,
+    "cs": 32.5,
+    "groups": {
+      "v in [6V/10,V]": {
+        "cs_no": 24.0,
+        "cs_bbp": 28.000000000000004
+      },
+      "v in [V/2,6V/10]": {
+        "cs_no": 1.0,
+        "cs_bbp": 2.5
+      },
+      "v in [3V/10,V/2]": {
+        "cs_no": 0.0,
+        "cs_bbp": 2.0
+      },
+      "v in [0,3V/10]": {
+        "cs_no": 0.0,
+        "cs_bbp": 0.0
+      }
+    }
+  },
+  "checks": {
+    "U_profit_up": true,
+    "U_cs_down": true,
+    "S_profit_down": true,
+    "S_cs_up": true,
+    "U_numbers": true,
+    "S_numbers": true
+  },
+  "crossover_share_S": 0.30000000000000004,
+  "hidden_pattern": "BBP aggregate CS is U-harmful but S-beneficial; crossover at S-share\u22480.30. Poor subgroups gain even in U (Table 2.1 rows 2-3), rich lose \u2014 distributional flip invisible in aggregates."
+}

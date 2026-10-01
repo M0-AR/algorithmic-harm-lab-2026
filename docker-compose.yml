@@ -1,0 +1,30 @@
+# Best practice: World Bank Reproducible Research Repository + AEA Data Editor Docker pattern
+# (verified via free-search research 2026-10-01: aeadataeditor.github.io/posts/2021-11-16-docker)
+# One command reproduces the entire PhD-grade benchmark.
+services:
+  lab:
+    build: .
+    volumes:
+      - ./results:/lab/results
+      - ./data:/lab/data
+    environment:
+      - PYTHONPATH=/lab
+      - SEED=42
+    command: python experiments/run_all.py --seed 42 --live
+    mem_limit: 4g
+
+  jupyter:
+    build: .
+    ports:
+      - "8888:8888"
+    volumes:
+      - ./:/lab
+    command: jupyter notebook --ip=0.0.0.0 --port=8888 --no-browser --allow-root --NotebookApp.token=algorithmic-harm
+    profiles: ["interactive"]
+
+  verify:
+    build: .
+    volumes:
+      - ./results:/lab/results
+    command: pytest -q tests/
+    profiles: ["verify"]

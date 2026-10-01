@@ -1,0 +1,14 @@
+# Pinned for reproducibility — verified via PyPI registry 2026 (free-search/software.python + openresearch patterns)
+# Base: python:3.11-slim
+numpy==1.26.4
+pandas==2.2.2
+matplotlib==3.8.4
+scikit-learn==1.4.2
+scipy==1.13.0
+requests==2.31.0
+pyyaml==6.0.1
+tqdm==4.66.4
+statsmodels==0.14.2
+yfinance==1.7.0
+pytest==8.2.2
+jupyter==1.1.0
